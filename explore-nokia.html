@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nokia Phones</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('nokialogo.jpg') no-repeat center center fixed; /* Replace with Nokia logo URL */
+            background-size: cover;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .phone-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .phone-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .phone-image {
+            flex: 1;
+            max-width: 300px;
+            margin-right: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .phone-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .phone-details {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .phone-details h2 {
+            font-size: 1.5rem;
+            margin: 0 0 10px;
+            color: #0056b3;
+        }
+
+        .phone-details p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        .phone-details .pros {
+            margin: 10px 0;
+        }
+
+        .phone-details .pros ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .phone-details .pros ul li {
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            color: #4caf50;
+        }
+
+        .phone-details .pros ul li::before {
+            content: "✔";
+            margin-right: 5px;
+        }
+
+        .action-buttons {
+            margin-top: 10px;
+        }
+
+        .action-buttons button {
+            background-color: #0056b3;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .action-buttons button:hover {
+            background-color: #003d80;
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .phone-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .phone-image {
+                margin: 0 auto 20px;
+                max-width: 80%;
+            }
+
+            .phone-details {
+                text-align: center;
+            }
+
+            .action-buttons {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .action-buttons button {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Nokia G21 Section -->
+        <div class="phone-section">
+            <img src="Nokia-G21-6GB-Image-1.png" alt="Nokia G21" class="phone-image">
+            <div class="phone-details">
+                <h2>Nokia G21</h2>
+                <p><strong>Display:</strong> 6.5-inch, 720 x 1600 px</p>
+                <p><strong>Camera:</strong> 50 MP Main, 8 MP Selfie</p>
+                <p><strong>Battery:</strong> 5050 mAh</p>
+                <p><strong>Storage:</strong> 64GB, 128GB</p>
+                <p><strong>Hardware:</strong> Unisoc T606, 4GB RAM</p>
+                <p><strong>OS:</strong> Android 11</p>
+                <div class="pros">
+                    <strong>PROS:</strong>
+                    <ul>
+                        <li>Long-lasting battery</li>
+                        <li>Affordable price</li>
+                        <li>Good camera quality</li>
+                    </ul>
+                </div>
+                <div class="action-buttons">
+                    <button>I want it</button>
+                    <button>I have it</button>
+                    <button>I had it</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nokia X10 Section -->
+        <div class="phone-section">
+            <img src="Nokia-X10-Image-1.png" alt="Nokia X10" class="phone-image">
+            <div class="phone-details">
+                <h2>Nokia X10</h2>
+                <p><strong>Display:</strong> 6.67-inch, 1080 x 2400 px</p>
+                <p><strong>Camera:</strong> 48 MP Main, 8 MP Selfie</p>
+                <p><strong>Battery:</strong> 4470 mAh</p>
+                <p><strong>Storage:</strong> 128GB</p>
+                <p><strong>Hardware:</strong> Qualcomm Snapdragon 480, 6GB RAM</p>
+                <p><strong>OS:</strong> Android 11 (Upgradeable)</p>
+                <div class="pros">
+                    <strong>PROS:</strong>
+                    <ul>
+                        <li>5G connectivity</li>
+                        <li>Durable build quality</li>
+                        <li>Bright and large display</li>
+                    </ul>
+                </div>
+                <div class="action-buttons">
+                    <button>I want it</button>
+                    <button>I have it</button>
+                    <button>I had it</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Comparison</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Phone Comparison</h1>
+    <p>Compare the latest smartphones to find your perfect match!</p>
+  </header>
+
+  <table>
+    
+
+  <!-- Section: 5 Phones of Similar Brands -->
+  <div class="comparison-section" id="same-brand-section">
+    <h2>Compare Phones from the Same Brand</h2>
+    <div class="table-container">
+      <table class="comparison-table" id="same-brand-table">
+        <thead>
+          <tr>
+            <th>Model</th>
+            <!-- Dynamically populated -->
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamically populated -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Section: 2 Phones of Different Brands -->
+  <div class="comparison-section" id="different-brand-section">
+    <h2>Compare Phones from Different Brands</h2>
+    <div class="table-container">
+      <table class="comparison-table" id="different-brand-table">
+        <thead>
+          <tr>
+            <th>Model</th>
+            <!-- Dynamically populated -->
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamically populated -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  // Data for the comparisons
+  const data = {
+    sameBrand: [
+      {
+        name: "Apple iPhone 15 Pro",
+        image: "Apple-iphone-15-Image-3.png",
+        display: '6.1" Super Retina XDR',
+        processor: "A17 Pro",
+        ram: "8GB",
+        battery: "3274mAh",
+        camera: "48MP (main), 12MP (ultra-wide)",
+        price: "$999",
+      },
+      {
+        name: "Apple iPhone 15 Pro Max",
+        image: "apple-iphone-15-pro-max-1.jpg",
+        display: '6.7" Super Retina XDR',
+        processor: "A17 Pro",
+        ram: "8GB",
+        battery: "4422mAh",
+        camera: "48MP (main), 12MP (ultra-wide), 12MP (periscope)",
+        price: "$1199",
+      },
+      {
+        name: "Apple iPhone 14",
+        image: "Apple-iphone-14-Image-1.png",
+        display: '6.1" Super Retina XDR',
+        processor: "A15 Bionic",
+        ram: "6GB",
+        battery: "3279mAh",
+        camera: "12MP (main), 12MP (ultra-wide)",
+        price: "$799",
+      },
+      {
+        name: "Apple iPhone 13",
+        image: "Apple-iPhone-13-Image-1.png",
+        display: '6.1" Super Retina XDR',
+        processor: "A15 Bionic",
+        ram: "4GB",
+        battery: "3240mAh",
+        camera: "12MP (main), 12MP (ultra-wide)",
+        price: "$699",
+      },
+      {
+        name: "Apple iPhone SE (2023)",
+        image: "Apple-iPhone-SE-2022-Image-1.png",
+        display: '4.7" Retina HD',
+        processor: "A15 Bionic",
+        ram: "4GB",
+        battery: "1821mAh",
+        camera: "12MP (main)",
+        price: "$429",
+      },
+    ],
+    differentBrand: [
+      {
+        name: "Samsung Galaxy S23 Ultra",
+        image: "samsung-galaxy-s23-ultra-5g-1.png",
+        display: '6.8" Dynamic AMOLED 2X',
+        processor: "Snapdragon 8 Gen 2",
+        ram: "12GB",
+        battery: "5000mAh",
+        camera: "200MP (main), 12MP (ultra-wide), 10MP (periscope)",
+        price: "$1199",
+      },
+      {
+        name: "Google Pixel 8 Pro",
+        image: "google-pixel-8-pro-1.png",
+        display: '6.7" LTPO OLED',
+        processor: "Tensor G3",
+        ram: "12GB",
+        battery: "5100mAh",
+        camera: "50.5MP (main), 48MP (ultra-wide), 48MP (telephoto)",
+        price: "$999",
+      },
+    ],
+  };
+
+  // Function to populate comparison tables
+  function populateTable(tableId, phones) {
+    const table = document.getElementById(tableId);
+    const tableHead = table.querySelector("thead tr");
+    const tableBody = table.querySelector("tbody");
+
+    // Clear previous data
+    tableHead.innerHTML = "<th>Feature</th>";
+    tableBody.innerHTML = "";
+
+    // Populate table header
+    phones.forEach((phone) => {
+      const headerCell = document.createElement("th");
+      const phoneImg = document.createElement("img");
+      const phoneName = document.createElement("p");
+
+      phoneImg.src = phone.image;
+      phoneImg.alt = phone.name;
+      phoneImg.className = "phone-image";
+
+      phoneName.textContent = phone.name;
+
+      headerCell.appendChild(phoneImg);
+      headerCell.appendChild(phoneName);
+      tableHead.appendChild(headerCell);
+    });
+
+    // Features to display
+    const features = ["display", "processor", "ram", "battery", "camera", "price"];
+
+    // Populate table body
+    features.forEach((feature) => {
+      const row = document.createElement("tr");
+      const featureCell = document.createElement("td");
+      featureCell.textContent = feature.charAt(0).toUpperCase() + feature.slice(1);
+      row.appendChild(featureCell);
+
+      phones.forEach((phone) => {
+        const cell = document.createElement("td");
+        cell.textContent = phone[feature];
+        row.appendChild(cell);
+      });
+
+      tableBody.appendChild(row);
+    });
+  }
+
+  // Populate both sections
+  populateTable("same-brand-table", data.sameBrand);
+  populateTable("different-brand-table", data.differentBrand);
+});
+var product=[{
+    "id": 0,
+    "title":"",
+    "price":"",
+    "brand":"",
+    "discription":"",
+    "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png",
+    "Display":"",
+    "Processor":"",
+    "Memory":"",
+    "System":"",
+    "Battery":"",
+    "Operating":"",
+},{
+    "id": 1,
+    "title":"Samsung Galaxy S24 Ultra",
+    "price":"35000",
+    "brand":" Samsung galaxy",
+    "discription":"Actual storage availability may vary depending on pre-installed software.",
+    "ram":"180gb",
+    "image":"01_S24Ultra-Group-KV_PC.jpg",
+    "Display":" 6.8-inch Dynamic AMOLED with a 120Hz refresh rate, providing vibrant and smooth visuals.",
+    "Processor":" Powered by the Qualcomm Snapdragon 8 Gen 3 chipset, ensuring top-tier performance.",
+    "Memory":"Equipped with 12GB of RAM and available in storage options of 256GB, 512GB, and 1TB, catering to various user needs.",
+    "System":"Features a 200MP wide camera, delivering exceptional photo and video quality.",
+    "Battery":"Houses a 5,000 mAh battery, supporting 45W wired charging and 15W wireless charging, offering substantial battery life and quick recharge times.",
+    "Operating":" Runs on Android 14, with support for up to seven major upgrades, ensuring longevity in software updates.",
+},{
+    "id": 2,
+    "title":"tecno-spark-20",
+    "price":"",
+    "brand":"",
+    "discription":"",
+    "ram":"",
+    "image":"tecno-spark-20.jpg",
+    "Display":"",
+    "Processor":"",
+    "Memory":"",
+    "System":"",
+    "Battery":"",
+    "Operating":"",
+},{
+    "id": 3,
+    "title":"tecno-pro-14",
+    "price":"",
+    "brand":"Tecno",
+    "discription":"",
+    "ram":"",
+    "image":"https://www.whatmobile.com.pk/admin/images/Tecno/TecnoSpark20-b.jpg",
+    "Display":"",
+    "Processor":"",
+    "Memory":"",
+    "System":"",
+    "Battery":"",
+    "Operating":"",
+},{
+    "id": 4,
+    "title":"Iphone-12",
+    "price":"",
+    "brand":"Iphone",
+    "discription":"",
+    "ram":"",
+    "image":"",
+    "Display":"",
+    "Processor":"",
+    "Memory":"",
+    "System":"",
+    "Battery":"",
+    "Operating":"",
+}
+]
+
+  </script>
+</body>
+</html>

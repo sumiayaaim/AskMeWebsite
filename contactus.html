@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      font-family: Arial, sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: #ffeb3b;
+      text-decoration: none;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    a:hover {
+      color: #ff5722;
+      text-shadow: 0 0 5px #ff5722;
+    }
+
+    /* Background Image */
+    body {
+      background: url('Screenshot 2024-12-22 150657.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Content Overlay */
+    .contact-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+    }
+
+    /* Header Section */
+    .contact-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .contact-header p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    /* Contact Details Section */
+    .contact-details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .contact-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .icon-container {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #ffeb3b;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .contact-card:hover .icon-container {
+      color: #ff5722;
+      transform: rotate(15deg);
+    }
+
+    .contact-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .contact-card p {
+      font-size: 1rem;
+    }
+
+    /* Additional Content Section */
+    .about-contact {
+      margin-top: 30px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 10px;
+      max-width: 900px;
+      color: #fff;
+    }
+
+    .about-contact h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .about-contact p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+   
+
+    /* Map Section */
+    .map-section {
+      margin-top: 30px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .map-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    iframe {
+      border: none;
+      border-radius: 10px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .contact-header h1 {
+        font-size: 2rem;
+      }
+
+      .contact-header p {
+        font-size: 0.9rem;
+      }
+
+      .contact-card {
+        padding: 15px;
+      }
+
+      .contact-card h2 {
+        font-size: 1.2rem;
+      }
+
+      .contact-card p {
+        font-size: 0.9rem;
+      }
+
+      .about-contact h2 {
+        font-size: 1.5rem;
+      }
+
+      .map-section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Content Overlay -->
+  <div class="contact-page">
+    <!-- Header Section -->
+    <div class="contact-header">
+      <h1>Contact Us</h1>
+      <p>We are here to help. Reach out to us anytime!</p>
+    </div>
+
+    <!-- Contact Details Section -->
+    <div class="contact-details">
+      <!-- Address -->
+      <div class="contact-card">
+        <div class="icon-container">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <h2>Our Address</h2>
+        <p>A-65, ACME Co., Street no 12, New York</p>
+      </div>
+
+      <!-- Phone Numbers -->
+      <div class="contact-card">
+        <div class="icon-container">
+          <i class="fas fa-phone-alt"></i>
+        </div>
+        <h2>Phone Numbers</h2>
+        <p>+001-28272300</p>
+        <p>+001-2466</p>
+        <p>+001-2469</p>
+      </div>
+
+      <!-- Email -->
+      <div class="contact-card">
+        <div class="icon-container">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <h2>Email Us</h2>
+        <p><a href="mailto:webmaster@cellinfo.com">webmaster@cellinfo.com</a></p>
+      </div>
+    </div>
+
+    <!-- About Contact Section -->
+    <div class="about-contact">
+      <h2>Why Contact Us?</h2>
+      <p>
+        We believe in building long-lasting relationships with our customers. Whether you need assistance with 
+        product information, technical support, or billing, our team is always ready to help you with a smile. 
+        Trust us for fast, reliable, and friendly support.
+      </p>
+    </div>
+    <br>
+    <br>
+
+    
+
+    <div class="container" id="container">
+      <div class="form-container sign-up">
+          <form>
+              <h1>Create Account</h1>
+              <div class="social-icons">
+                  <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                  <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              <span>or use your email for registeration</span>
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <input type="password" placeholder="Password">
+              
+          
+              <button>Sign Up</button>
+          </form>
+      </div>
+      <div class="form-container sign-in">
+          <form>
+              <h1>Sign In</h1>
+              <div class="social-icons">
+                  <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                  <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              <span>or use your email password</span>
+              <input type="email" placeholder="Email">
+              <input type="password" placeholder="Password">
+              <a href="#">Forget Your Password?</a>
+              <button>Sign In</button>
+          </form>
+      </div>
+      <div class="toggle-container">
+          <div class="toggle">
+              <div class="toggle-panel toggle-left">
+                  <h1>Welcome Back!</h1>
+                  <p>Enter your personal details to use all of site features</p>
+                  <button class="hidden" id="login">Sign In</button>
+              </div>
+              <div class="toggle-panel toggle-right">
+                  <h1>Hello, Friend!</h1>
+                  <p>Register with your personal details to use all of site features</p>
+                  <button class="hidden" id="register">Sign Up</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <iframe width="500" height="500" src="https://embed.studio.binkies3d.com/live3d/677df88a8a99740053bfcdc2" frameborder="0" allowfullscreen></iframe>
+<br>
+<br>
+    <!-- Map Section -->
+    <div class="map-section">
+      <h2>Find Us Here</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.279915328!2d-74.25987768681982!3d40.697670063164336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5b9ba1d95%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1675698677741!5m2!1sen!2sin"
+        width="100%" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+
+      if (name === '' || email === '') {
+          alert('Please fill out all required fields.');
+          return;
+      }
+
+      alert(`Thank you, ${name}! You have successfully signed up for mobile updates.`);
+    });
+
+
+
+
+    
+  </script>
+</body>
+</html>

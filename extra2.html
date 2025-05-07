@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Me MOBILE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="java.js">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- AOS JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+<body>
+ 
+    <img src="https://via.placeholder.com/150x50?text=ASKME+Logo" alt="ASKME Logo">
+
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search for products, brands, or details...">
+        <button type="button">&#128269;</button>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li>
+            <a href="#support">Support <span class="dropdown-icon">&#x25BC;</span></a>
+            <ul class="dropdown">
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#livechat">Live Chat</a></li>
+                <li><a href="#guides">Guides & Manuals</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#compare">Comparisons <span class="dropdown-icon">&#x25BC;</span></a>
+            <ul class="dropdown">
+                <li><a href="#abc-vs-xyz">ABC vs XYZ</a></li>
+                <li><a href="#top-5">Top 5 Phones</a></li>
+                <li><a href="#features-overview">Features Overview</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#product-info">Product Details <span class="dropdown-icon">&#x25BC;</span></a>
+            <ul class="dropdown">
+                <li><a href="#nokia">Nokia</a></li>
+                <li><a href="#samsung">Samsung</a></li>
+                <li><a href="#apple">Apple</a></li>
+                <li><a href="#oneplus">OnePlus</a></li>
+            </ul>
+        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#askme">Ask Me</a></li>
+        <li class="auth"><a href="#signin">Sign In</a> / <a href="#create-account">Create Account</a></li>
+    </ul>
+</nav>
+<body>
+<
+<!-- Popular Comparisons Section -->
+<section class="popular-comparisons" id="popular-comparisons">
+    <div class="comparisons-header">
+        <h2>Popular Mobile Comparisons</h2>
+        <p>Explore and compare top mobile phones and their key features.</p>
+    </div>
+    <div class="comparison-cards">
+        <!-- Comparison 1 -->
+        <div class="comparison-card" style="background-image: url('tecnocamon30.png');" data-aos="fade-up">
+            <h3>iPhone 14 vs Samsung Galaxy S22</h3>
+            <p>Display: 6.1" OLED vs 6.2" AMOLED</p>
+            <p>Camera: 12MP vs 50MP</p>
+            <p>Price: $999 vs $849</p>
+            <a href="#" class="compare-btn">Compare Now</a>
+        </div>
+        <!-- Comparison 2 -->
+        <div class="comparison-card" style="background-image: url('images/pixel-iphone.jpg');" data-aos="fade-up" data-aos-delay="100">
+            <h3>Google Pixel 7 vs iPhone 13</h3>
+            <p>Processor: Tensor G2 vs A15 Bionic</p>
+            <p>Battery: 4355mAh vs 3240mAh</p>
+            <p>Price: $599 vs $799</p>
+            <a href="#" class="compare-btn">Compare Now</a>
+        </div>
+        <!-- Comparison 3 -->
+        <div class="comparison-card" style="background-image: url('images/oneplus-xiaomi.jpg');" data-aos="fade-up" data-aos-delay="200">
+            <h3>OnePlus 11 vs Xiaomi 12 Pro</h3>
+            <p>Processor: Snapdragon 8 Gen 2 vs Snapdragon 8 Gen 1</p>
+            <p>Battery: 5000mAh vs 4600mAh</p>
+            <p>Price: $699 vs $649</p>
+            <a href="#" class="compare-btn">Compare Now</a>
+        </div>
+        <!-- Comparison 4 -->
+        <div class="comparison-card" style="background-image: url('images/flip-razr.jpg');" data-aos="fade-up" data-aos-delay="300">
+            <h3>Samsung Z Flip 4 vs Motorola Razr</h3>
+            <p>Display: 6.7" vs 6.2"</p>
+            <p>Battery: 3700mAh vs 2800mAh</p>
+            <p>Price: $999 vs $899</p>
+            <a href="#" class="compare-btn">Compare Now</a>
+        </div>
+        <!-- Comparison 5 -->
+        <div class="comparison-card" style="background-image: url('images/iphone-oneplus.jpg');" data-aos="fade-up" data-aos-delay="400">
+            <h3>iPhone 12 vs OnePlus 9 Pro</h3>
+            <p>Processor: A14 Bionic vs Snapdragon 888</p>
+            <p>Display: 6.1" vs 6.7"</p>
+            <p>Price: $699 vs $729</p>
+            <a href="#" class="compare-btn">Compare Now</a>
+        </div>
+        <!-- Comparison 6 -->
+        <div class="comparison-card" style="background-image: url('images/realme-poco.jpg');" data-aos="fade-up" data-aos-delay="500">
+            <h3>Realme GT Neo 3 vs Poco F4</h3>
+            <p>Processor: Dimensity 8100 vs Snapdragon 870</p>
+            <p>Battery: 4500mAh vs 4500mAh</p>
+            <p>Price: $399 vs $379</p>
+            <a href="#" class="compare-btn">Compare Now</a>
+        </div>
+        <!-- Comparison 7 -->
+        <div class="comparison-card" style="background-image: url('images/a53-v23.jpg');" data-aos="fade-up" data-aos-delay="600">
+            <h3>Samsung Galaxy A53 vs Vivo V23</h3>
+            <p>Display: 6.5" Super AMOLED vs 6.44" AMOLED</p>
+            <p>Camera: Quad 64MP vs Dual 50MP</p>
+            <p>Price: $449 vs $429</p>
+            <a href="#" class="compare-btn">Compare Now</a>
+        </div>
+        <!-- Comparison 8 -->
+        <div class="comparison-card" style="background-image: url('images/reno8-note11.jpg');" data-aos="fade-up" data-aos-delay="700">
+            <h3>Oppo Reno 8 vs Redmi Note 11 Pro</h3>
+            <p>Processor: Dimensity 1300 vs Helio G96</p>
+            <p>Battery: 4500mAh vs 5000mAh</p>
+            <p>Price: $399 vs $329</p>
+            <a href="#" class="compare-btn">Compare Now</a>
+        </div>
+        <!-- Comparison 9 -->
+        <div class="comparison-card" style="background-image: url('images/rog-blackshark.jpg');" data-aos="fade-up" data-aos-delay="800">
+            <h3>Asus ROG Phone 5 vs Black Shark 4</h3>
+            <p>Battery: 6000mAh vs 4500mAh</p>
+            <p>Cooling: Advanced Cooling Systems</p>
+            <p>Price: $899 vs $699</p>
+            <a href="#" class="compare-btn">Compare Now</a>
+        </div>
+        <!-- Comparison 10 -->
+        <div class="comparison-card" style="background-image: url('images/magic4-p50.jpg');" data-aos="fade-up" data-aos-delay="900">
+            <h3>Honor Magic 4 Pro vs Huawei P50 Pro</h3>
+            <p>Camera: Quad 50MP vs Dual 50MP</p>
+            <p>Display: 6.81" vs 6.6"</p>
+            <p>Price: $999 vs $949</p>
+            <a href="#" class="compare-btn">Compare Now</a>
+        </div>
+    </div>
+</section>
+<!-- Check Phone Features Section -->
+<section class="check-features" id="check-features">
+    <div class="features-content">
+        <h2>Check Your Dream Phone With Features</h2>
+        <p>Enter your phone's model number to get detailed specifications and features.</p>
+        <form class="features-form">
+            <input type="text" id="model-number" placeholder="Enter Model Number (e.g., iPhone 14)" required>
+            <button type="submit" class="check-btn">Check Features</button>
+        </form>
+        <div class="features-results" id="features-results">
+            <!-- Search results will appear here -->
+        </div>
+    </div>
+</section>
+<script>
+    document.getElementById('features-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const modelNumber = document.getElementById('model-number').value.trim().toLowerCase();
+        const resultsDiv = document.getElementById('features-results');
+
+        // Simulated Phone Database
+        const phoneDatabase = {
+            "iphone 14": "Display: 6.1\" OLED | Processor: A16 Bionic | Camera: Dual 12MP | Battery: 3279mAh | Price: $999",
+            "samsung galaxy s22": "Display: 6.2\" AMOLED | Processor: Exynos 2200 | Camera: 50MP | Battery: 3700mAh | Price: $849",
+            "google pixel 7": "Display: 6.3\" OLED | Processor: Tensor G2 | Camera: 50MP + 12MP | Battery: 4355mAh | Price: $599",
+            "oneplus 11": "Display: 6.7\" AMOLED | Processor: Snapdragon 8 Gen 2 | Camera: 50MP + 48MP | Battery: 5000mAh | Price: $699",
+            "xiaomi 12 pro": "Display: 6.73\" AMOLED | Processor: Snapdragon 8 Gen 1 | Camera: Triple 50MP | Battery: 4600mAh | Price: $649",
+            "samsung z flip 4": "Display: 6.7\" AMOLED | Battery: 3700mAh | Foldable Design | Price: $999",
+            "iphone 13": "Display: 6.1\" OLED | Processor: A15 Bionic | Camera: Dual 12MP | Battery: 3240mAh | Price: $799",
+            "redmi note 11 pro": "Display: 6.67\" AMOLED | Processor: Helio G96 | Camera: 108MP | Battery: 5000mAh | Price: $329",
+            "realme gt neo 3": "Display: 6.7\" AMOLED | Processor: Dimensity 8100 | Battery: 4500mAh | Price: $399",
+            "asus rog phone 5": "Display: 6.78\" AMOLED | Battery: 6000mAh | Gaming Features | Price: $899"
+        };
+
+        // Check for valid input
+        const result = phoneDatabase[modelNumber];
+        if (result) {
+            resultsDiv.innerHTML = `<strong>Features for "${modelNumber.toUpperCase()}":</strong><br>${result}`;
+        } else {
+            resultsDiv.innerHTML = `<span>Sorry, no details found for "${modelNumber}". Please try a different model.</span>`;
+        }
+    });
+</script>
+
+
+<!-- Responsive Slider Section -->
+<section class="slider-section" id="slider">
+    <div class="slider-container">
+        <h2>Explore Popular Phones</h2>
+        <div class="slider">
+            <div class="slide">
+                <img src="xiaomireminote13.png" alt="iPhone 14">
+                <p>iPhone 14: A16 Bionic, Dual 12MP Camera</p>
+            </div>
+            <div class="slide">
+                <img src="tecnospark20c.png" alt="Samsung Galaxy S22">
+                <p>Samsung Galaxy S22: Exynos 2200, 50MP Camera</p>
+            </div>
+            <div class="slide">
+                <img src="xiomi1.png" alt="Google Pixel 7">
+                <p>Google Pixel 7: Tensor G2, Dual Camera</p>
+            </div>
+            <div class="slide">
+                <img src="images/oneplus11.jpg" alt="OnePlus 11">
+                <p>OnePlus 11: Snapdragon 8 Gen 2, 50MP Camera</p>
+            </div>
+            <div class="slide">
+                <img src="images/xiaomi12pro.jpg" alt="Xiaomi 12 Pro">
+                <p>Xiaomi 12 Pro: Snapdragon 8 Gen 1, 50MP Camera</p>
+            </div>
+        </div>
+        <!-- Navigation Buttons -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</section>
+<script>
+    let currentIndex = 0;
+
+    function moveSlide(step) {
+        const slides = document.querySelectorAll('.slide');
+        currentIndex += step;
+
+        if (currentIndex >= slides.length) {
+            currentIndex = 0; // Loop back to the first slide
+        } else if (currentIndex < 0) {
+            currentIndex = slides.length - 1; // Go to the last slide
+        }
+
+        const offset = -currentIndex * 100; // Move to the correct slide
+        document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+    }
+
+    // Auto-slide functionality
+    setInterval(() => moveSlide(1), 5000); // Change slides every 5 seconds
+</script>
+
+
+<!-- AOS Library for Animations -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init(); // Initialize AOS
+</script>
+
+
+<!-- Link to AOS Library for Scroll Animations -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Initialize AOS Library
+    AOS.init();
+</script>
+
+
+<!-- Our Mission Section -->
+<section class="our-mission" id="our-mission">
+    <div class="mission-container">
+        <div class="mission-content">
+            <h2>Our Mission</h2>
+            <p>
+                ASKME Ltd. is a multinational company providing comprehensive information services to the general public. 
+                From <strong>Pin to Piano</strong>, we deliver information that empowers people to make informed decisions.
+            </p>
+            <p>
+                Our services span across telephone-based information systems, ensuring customers receive timely and accurate 
+                details about products and services. Our primary revenue comes from highlighting and promoting 
+                the products and services of our valued partners.
+            </p>
+            <p>
+                We take pride in connecting people with information, making ASKME a trusted source for customers and businesses alike.
+            </p>
+        </div>
+        <div class="mission-image">
+            <img src="images.png" alt="Our Mission Image">
+        </div>
+    </div>
+</section>
+
+
+<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, 
+        offset: 120,    
+        once: false,    
+        mirror: true    
+    });
+</script> -->
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Phones</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('applelogo.jpg') no-repeat center center fixed; /* Replace with Apple logo URL */
+            background-size: cover;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .phone-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .phone-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .phone-image {
+            flex: 1;
+            max-width: 300px;
+            margin-right: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .phone-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .phone-details {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .phone-details h2 {
+            font-size: 1.5rem;
+            margin: 0 0 10px;
+            color: #0056b3;
+        }
+
+        .phone-details p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        .phone-details .pros {
+            margin: 10px 0;
+        }
+
+        .phone-details .pros ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .phone-details .pros ul li {
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            color: #4caf50;
+        }
+
+        .phone-details .pros ul li::before {
+            content: "✔";
+            margin-right: 5px;
+        }
+
+        .action-buttons {
+            margin-top: 10px;
+        }
+
+        .action-buttons button {
+            background-color: #0056b3;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .action-buttons button:hover {
+            background-color: #003d80;
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .phone-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .phone-image {
+                margin: 0 auto 20px;
+                max-width: 80%;
+            }
+
+            .phone-details {
+                text-align: center;
+            }
+
+            .action-buttons {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .action-buttons button {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- iPhone 14 Pro Section -->
+        <div class="phone-section">
+            <img src="Apple-iphone-14-Image-1.png" alt="iPhone 14 Pro" class="phone-image">
+            <div class="phone-details">
+                <h2>iPhone 14 Pro</h2>
+                <p><strong>Display:</strong> 6.1-inch Super Retina XDR, 2556 x 1179 px</p>
+                <p><strong>Camera:</strong> 48 MP Main, 12 MP Selfie</p>
+                <p><strong>Battery:</strong> 3200 mAh</p>
+                <p><strong>Storage:</strong> 128GB, 256GB, 512GB, 1TB</p>
+                <p><strong>Hardware:</strong> A16 Bionic Chip, 6GB RAM</p>
+                <p><strong>OS:</strong> iOS 16</p>
+                <div class="pros">
+                    <strong>PROS:</strong>
+                    <ul>
+                        <li>Dynamic Island feature</li>
+                        <li>Advanced camera system</li>
+                        <li>ProMotion display (120Hz)</li>
+                    </ul>
+                </div>
+                <div class="action-buttons">
+                    <button>I want it</button>
+                    <button>I have it</button>
+                    <button>I had it</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- iPhone SE 2022 Section -->
+        <div class="phone-section">
+            <img src="Apple-iPhone-SE-2022-Image-1.png" alt="iPhone SE 2022" class="phone-image">
+            <div class="phone-details">
+                <h2>iPhone SE 2022</h2>
+                <p><strong>Display:</strong> 4.7-inch Retina HD, 1334 x 750 px</p>
+                <p><strong>Camera:</strong> 12 MP Main, 7 MP Selfie</p>
+                <p><strong>Battery:</strong> 2018 mAh</p>
+                <p><strong>Storage:</strong> 64GB, 128GB, 256GB</p>
+                <p><strong>Hardware:</strong> A15 Bionic Chip, 4GB RAM</p>
+                <p><strong>OS:</strong> iOS 15</p>
+                <div class="pros">
+                    <strong>PROS:</strong>
+                    <ul>
+                        <li>Compact and lightweight</li>
+                        <li>Powerful A15 Bionic chip</li>
+                        <li>Affordable price</li>
+                    </ul>
+                </div>
+                <div class="action-buttons">
+                    <button>I want it</button>
+                    <button>I have it</button>
+                    <button>I had it</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
